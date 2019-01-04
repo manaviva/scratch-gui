@@ -1331,9 +1331,14 @@ var ArgumentType = {
   STRING: 'string',
 
   /**
-   * String value with matirx field
+   * String value with matrix field
    */
-  MATRIX: 'matrix'
+  MATRIX: 'matrix',
+
+  /**
+   * MIDI note number with note picker (piano) field
+   */
+  NOTE: 'note'
 };
 module.exports = ArgumentType;
 
@@ -1449,7 +1454,7 @@ g = (function() {
 
 try {
 	// This works if eval is allowed (see CSP)
-	g = g || Function("return this")() || (1, eval)("this");
+	g = g || new Function("return this")();
 } catch (e) {
 	// This works if the window reference is available
 	if (typeof window === "object") g = window;
