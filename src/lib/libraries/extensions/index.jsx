@@ -16,6 +16,7 @@ import text2speechImage from './text2speech.png';
 import text2speechInsetImage from './text2speech-small.svg';
 import makeymakeyImage from './makeymakey.png';
 import makeymakeyInsetImage from './makeymakey-small.svg';
+import MicrammingImage from './micramming.png';
 
 import microbitPeripheralImage from './peripheral-connection/microbit/microbit-illustration.svg';
 import microbitMenuImage from './peripheral-connection/microbit/microbit-small.svg';
@@ -233,5 +234,13 @@ export default [
         ),
         helpLink: 'https://scratch.mit.edu/wedo'
 
+    },
+    {
+    	name: 'Micramming',
+	    extensionId: 'Micramming',
+    	iconURL: MicrammingImage,
+	    description: 'Micramming',
+    	featured: true,
+        disabled: false
     }
 ];
